@@ -7,12 +7,38 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/activity_main_TextView_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Welcome to AboutBank"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/activity_main_EditText_BIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit BIN from card..."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    <Button
+        android:id="@+id/activity_main_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_EditText_BIN"
+        android:text="Search"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
